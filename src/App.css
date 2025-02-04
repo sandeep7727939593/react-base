@@ -1,0 +1,17 @@
+.image {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  width: 80%;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  margin: 20px;
+}
