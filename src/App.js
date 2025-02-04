@@ -2,7 +2,7 @@ import './App.css';
 import Menu from './components/Menu';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Article from './components/Article';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
