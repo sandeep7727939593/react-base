@@ -1,0 +1,55 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Main container layout */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Sidebar and Content */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+
+/* Content */
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  background: #ffffff;
+}
+
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+
+.image {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+  width: 80%;
+}
+
+
+
+
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  margin: 20px;
+}

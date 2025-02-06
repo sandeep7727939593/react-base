@@ -1,33 +1,38 @@
-import './App.css';
-import Menu from './components/Menu';
+import './css/App.css';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Article from './components/Article';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Images from './components/Imags';
-import Gallery from './components/Gallery';
+import Article from './pages/Article';
+import Images from './pages/Imags';
+import Gallery from './pages/Gallery';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import { useState } from "react";
 
 function App() {
+
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
-		<div >
-			<Menu />
-			<Container>
-				<Row>
-					<Col>
-					<Router>
+		<Router>
+			<div className="app">
+				<Navbar isOpen={isOpen} setIsOpen={setIsOpen}/>
+				<div className="main-container">
+					<Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>
+					<div className="content">
 						<Routes>
-						<Route path="/order-list" element={<Article />} />
-						<Route path="/images" element={<Images />} />
-						<Route path="/gallery" element={<Gallery />} />
+							<Route path="/order-list" element={<Article />} />
+							<Route path="/images" element={<Images />} />
+							<Route path="/gallery" element={<Gallery />} />
+							<Route path="/about" element={<About />} />
+							<Route path="/contact" element={<Contact />} />
 						</Routes>
-					</Router>
-					</Col>
-				</Row>
-			</Container>
-		</div>
+					</div>
+				</div>
+			</div>
+		</Router>
 	);
 }
 
