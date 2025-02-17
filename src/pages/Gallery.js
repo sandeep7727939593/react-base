@@ -1,3 +1,4 @@
+import React from "react";
 import Images from "./Imags"
 
 const Gallery = () => {
@@ -5,8 +6,6 @@ const Gallery = () => {
     return <section>
         <h2>Gallery</h2>
         <div className="gallery">
-        <Images/>
-        <Images/>
         <Images/>
         <Images/>
         <Images/>

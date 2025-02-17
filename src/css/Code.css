@@ -1,0 +1,8 @@
+.code-block {
+    margin: 2%;
+    padding: 2%;
+    border: 0 solid #e3e3e3;
+    background: #f0f0f0;;
+    box-sizing: border-box;
+    border-radius: 5px;
+}

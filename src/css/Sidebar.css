@@ -1,46 +1,70 @@
 /* Sidebar */
 .sidebar {
+  width: 220px;
+  background: white;
+  padding: 20px;
+  height: 100vh;
+  border-right: 2px solid #ddd;
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+}
+
+.sidebar-content {
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+}
+
+.sidebar-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+/* Sidebar Links */
+.sidebar a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 12px;
+  transition: background 0.3s ease;
+}
+
+/* Active Link */
+.sidebar a.active-link {
+  background: #d2e4f7; /* Change this to your theme color */
+  color: #007bff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Hover Effect */
+.sidebar a:hover {
+  background: #f0f0f0;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
     width: 220px;
+    height: 100%;
     background: white;
-    padding: 20px;
-    height: 100vh;
-    border-right: 2px solid #ddd;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .sidebar a {
-    display: block;
-    color: #333;
-    text-decoration: none;
-    padding: 12px;
-    transition: background 0.3s ease;
-  }
-  
-  .sidebar a:hover {
-    background: #f0f0f0;
+    box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
   }
 
-  /* Mobile View Adjustments */
-@media (max-width: 768px) {
-  
-    .sidebar {
-      position: fixed;
-      left: -250px;
-      top: 0;
-      width: 220px;
-      height: 100%;
-      background: white;
-      box-shadow: 2px 0px 5px rgba(0, 0, 0, 0.2);
-      transition: left 0.3s ease-in-out;
-    }
-  
-    .sidebar.open {
-      left: 0;
-    }
-  
-    .menu-toggle {
-      display: block;
-      font-size: 24px;
-      cursor: pointer;
-    }
+  .sidebar.open {
+    left: 0;
   }
+
+  .sidebar-content {
+    max-height: 90vh;
+  }
+}
