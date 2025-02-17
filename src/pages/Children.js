@@ -1,5 +1,5 @@
-const B = ({image}) => {
-    return <img src={image} />
+const B = ({image, alt}) => {
+    return <img src={image} alt={alt} />
 }
 
 const A = ({children}) => {
@@ -13,13 +13,13 @@ const Children = () => {
         <h1>Children pass as Props</h1>
         <ol>
             <A>
-                <B image="https://i.imgur.com/YfeOqp2s.jpg"/>
+                <B image="https://i.imgur.com/YfeOqp2s.jpg" alt="first pic"/>
             </A>
             <A>
-                <B image="https://i.imgur.com/YfeOqp2s.jpg"/>
+                <B image="https://i.imgur.com/YfeOqp2s.jpg" alt="second pic"/>
             </A>
             <A>
-                <B image="https://i.imgur.com/YfeOqp2s.jpg"/>
+                <B image="https://i.imgur.com/YfeOqp2s.jpg" alt="third pic"/>
             </A>
         </ol>
     </div>
