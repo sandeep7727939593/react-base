@@ -11,6 +11,9 @@ import Children from '../pages/Children';
 import ConditionalRender from '../pages/ConditionalRender';
 import RenderList from '../pages/RenderList';
 import Key from '../pages/Key';
+import EventHandler from '../pages/EventHandler';
+import EventPropagation from '../pages/EventPropagation';
+import PreventDefault from '../pages/PreventDefault';
 
 // Define routes in JSON format
 const routes = [
@@ -25,6 +28,9 @@ const routes = [
 	{ path: "/conditional-render", name: "Conditional Render", component: ConditionalRender },
 	{ path: "/render-list", name: "Render List", component: RenderList },
 	{ path: "/key", name: "List Key", component: Key },
+	{ path: "/event-handler", name: "Event Handler", component: EventHandler },
+	{ path: "/event-propagation", name: "Event Propagation", component: EventPropagation },
+	{ path: "/prevent-default", name: "Prevent Default", component: PreventDefault },
 	{ path: "/about", name: "About", component: About },
 	{ path: "/contact", name: "Contact", component: Contact },
 ];
