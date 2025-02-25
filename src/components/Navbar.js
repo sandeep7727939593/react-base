@@ -5,7 +5,8 @@ const Navbar = ({isOpen, setIsOpen}) => {
 
   return (
     <nav className="navbar">
-      <h2>CodewithJangir</h2>
+      <img className="navbar-logo" src="/logo192.png" alt="CodewithJangir" />
+      <h2 className="nav-brand">CodewithJangir</h2>
       <div className="nav-links">
       {isMobile && <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
         ☰

@@ -14,6 +14,10 @@ import Key from '../pages/Key';
 import EventHandler from '../pages/EventHandler';
 import EventPropagation from '../pages/EventPropagation';
 import PreventDefault from '../pages/PreventDefault';
+import UseState from '../pages/UseState';
+import RenderandCommit from '../pages/RenderandCommit';
+import StateSnapshot from '../pages/StateSnapshot';
+import Queueing from '../pages/Queueing';
 
 // Define routes in JSON format
 const routes = [
@@ -31,6 +35,10 @@ const routes = [
 	{ path: "/event-handler", name: "Event Handler", component: EventHandler },
 	{ path: "/event-propagation", name: "Event Propagation", component: EventPropagation },
 	{ path: "/prevent-default", name: "Prevent Default", component: PreventDefault },
+	{ path: "/use-state", name: "Use State", component: UseState },
+	{ path: "/render-and-commit", name: "Render and Commit", component: RenderandCommit },
+	{ path: "/state-and-snapshort", name: "State as a Snapshot", component: StateSnapshot },
+	{ path: "/queueing", name: "Queueing", component: Queueing },
 	{ path: "/about", name: "About", component: About },
 	{ path: "/contact", name: "Contact", component: Contact },
 ];
