@@ -18,6 +18,10 @@ import UseState from '../pages/UseState';
 import RenderandCommit from '../pages/RenderandCommit';
 import StateSnapshot from '../pages/StateSnapshot';
 import Queueing from '../pages/Queueing';
+import MovingDot from '../pages/MovingDot';
+import Form from '../pages/Form';
+import FormV2 from '../pages/FormV2';
+import UseImmer from '../pages/UseImmer';
 
 // Define routes in JSON format
 const routes = [
@@ -39,6 +43,10 @@ const routes = [
 	{ path: "/render-and-commit", name: "Render and Commit", component: RenderandCommit },
 	{ path: "/state-and-snapshort", name: "State as a Snapshot", component: StateSnapshot },
 	{ path: "/queueing", name: "Queueing", component: Queueing },
+	{ path: "/moving-dot", name: "Moving Dot", component: MovingDot },
+	{ path: "/form", name: "Form", component: Form },
+	{ path: "/form-v2", name: "FormV2", component: FormV2 },
+	{ path: "/use-immer", name: "UseImmer", component: UseImmer },
 	{ path: "/about", name: "About", component: About },
 	{ path: "/contact", name: "Contact", component: Contact },
 ];
